@@ -7,11 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 const myroute:Routes=[
   {
     path:"",
     component:HomePageComponent
+  },
+  {
+    path:"admin",
+    component:AdminLoginComponent
   }
 ]
 
@@ -19,7 +24,8 @@ const myroute:Routes=[
   declarations: [
     AppComponent,
     HomePageComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
