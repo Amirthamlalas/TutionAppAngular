@@ -14,6 +14,7 @@ export class HomePageComponent {
   readValue=()=>{
 
    let data:any={"fullname":this.fullname,"mail":this.mail,"message":this.message}
+   console.log(data)
   }
 
 
