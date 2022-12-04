@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { AddCourseComponent } from './add-course/add-course.component';
+import { ViewCourseComponent } from './view-course/view-course.component';
+import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 
 const myroute:Routes=[
   {
@@ -17,6 +20,14 @@ const myroute:Routes=[
   {
     path:"admin",
     component:AdminLoginComponent
+  },
+  {
+    path:"addcourse",
+    component:AddCourseComponent
+  },
+  {
+    path:"viewcourse",
+    component:ViewCourseComponent
   }
 ]
 
@@ -25,7 +36,10 @@ const myroute:Routes=[
     AppComponent,
     HomePageComponent,
     NavbarComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    AddCourseComponent,
+    ViewCourseComponent,
+    NavbarAdminComponent
   ],
   imports: [
     BrowserModule,
